@@ -1,6 +1,6 @@
-<!DOCTYPE html> <!--ini adalah halaman index tempat kita memasukan code html-->
+<!DOCTYPE html>
 <html lang="en" style="background-color: wheat;">
-<head> <!--bagian atas tampilan-->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katik</title>
@@ -8,17 +8,16 @@
     <script src="js/script.js"></script> <!--mengaitkan dengan js-->
 </head>
 
-
 <!--
      penggunaan class, id, name, value bisa menjadi alat untuk mengklasifikasi atau mengidentifikasi 
     object yang akan di kaitkan dengann css ataupun js 
-    -->
+-->
 
 <!-- main header -->
 <body> 
     <header>
-        <h1 class="main-title">Welcome To Katik</h1>
         <nav>
+            <h1 class="main-title">Welcome To Katik</h1>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rumus.html">Rumus</a></li>
@@ -27,8 +26,8 @@
     </header>
 
     <!------------------ Input Kalkulasi Luas ------------------->
-    <main class="container-luas" style="display: flex;"> 
-        <aside class="luas-section">
+    <main class="container-section" style="display: flex;"> 
+        <aside class="input-section">
             <form>
                 <div class="input-luas">
                     <label for="alas"> Alas </label>
@@ -42,15 +41,15 @@
         </aside>
 
         <!------------------ Result Kalkulasi ------------------->
-        <aside class="info-section">
+        <aside class="result-section">
             <section>
                 <header>
                     <h2>Hasil</h2>
                     <form id="hasil" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <h4 style="color: #666;" id="bmi-result" class="bmi-result">0</h4>
-                            <p id="bmi-value" class="bmi-value"></p>
-                            <p id="bmi-category" class="bmi-category"></p>
+                            <h4 style="color: #666;" id="result" class="result">0</h4>
+                            <p id="value" class="value"></p>
+                            <p id="category" class="category"></p>
                         </div>
                     </form>
                 </header>
