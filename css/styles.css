@@ -1,13 +1,16 @@
+/* tampilan web tanpa bilah scroll di kanan */
 ::-webkit-scrollbar {
     display: none;
 }
 
+/* keseluruhan laman */
 body {
     margin: 0;
     padding: 0;
     background-color: wheat;
 }
 
+/* Navigasi */
 nav {
     width: 100%;
     background: #333;
@@ -39,17 +42,55 @@ nav ul li a:hover {
     color: #f0a500;
 }
 
-.container {
+/*Laman isi */
+main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    height: 600px;
 }
 
+/* element h2 dikhususkan untuk sub judul berada di tengah */
+h2 {
+    text-align: center;
+}
+
+img {    
+    width: 341px;
+    border-radius: 36px;
+    padding: 1px;
+    margin: 1px;
+}
+.container {
+    display: flex;
+    margin: 1px;
+    padding: 1px;
+}
+
+/* Style input dan result */
 .input-section, .result-section {
     flex: 1 1 300px;
     margin: 10px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
+}
+.result-section {
+    text-align: center;
+}
+
+.input-luas, .input-keliling {
+    display: table-caption;
+    margin: 1px;
+    padding: 1px;
+}
+
+.btn-hitung {
+    background-color: mediumspringgreen;
+    color: white;
+    font-family: serif;
+}
+
+.btn-reset {
+    background-color: red;
+    color: white;
+    font-family: serif;
 }

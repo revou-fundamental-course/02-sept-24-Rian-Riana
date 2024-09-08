@@ -26,25 +26,59 @@
     </header>
 
     <!------------------ Input Kalkulasi Luas ------------------->
-    <main class="container-section" style="display: flex;"> 
+    <main class="container-section"> 
         <aside class="input-section">
             <form>
-                <div class="input-luas">
-                    <label for="alas"> Alas </label>
-                    <input type="number" id="alas" placeholder="Masukan Panjang Alas">
-                    <label for="tinggi"> Tinggi </label>
-                    <input type="number" id="tinggi" placeholder="Masukan Tinggi">
-                    <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
-                    <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                <div>
+                    <h2> Hitung Luas & Keliling Segitiga </h2>  
                 </div>
+
+                <div>
+                    <img src="https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga-1024x576.png.webp" alt="luas-segitiga">
+                </div>
+            </form>
+            <form class="container">
+                <section class="input-luas">
+                    <div>
+                        <label for="alas"> Hitung luas segitiga </label>
+                        <input type="number" id="alas" placeholder="Panjang Alas">
+                        <input type="number" id="tinggi" placeholder="Tinggi">
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                        </div>
+                </section>
+
+                <section class="input-keliling">
+                    <div>
+                        <label for="alas"> Hitung Keliling segitiga </label>
+                        <input type="number" id="sisi" placeholder="sisi kanan">
+                        <input type="number" id="sisi" placeholder="sisi kiri">
+                        <input type="number" id="sisi" placeholder="sisi bawah">
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                    </div>
+                </section>
             </form>
         </aside>
 
         <!------------------ Result Kalkulasi ------------------->
         <aside class="result-section">
-            <section>
+            <section class="luas-segitiga">
                 <header>
-                    <h2>Hasil</h2>
+                    <h2>Luas Segitiga</h2>
+                    <form id="hasil" style="display: flexbox;">
+                        <div id="result-section" class="result-section">
+                            <h4 style="color: #666;" id="result" class="result">0</h4>
+                            <p id="value" class="value"></p>
+                            <p id="category" class="category"></p>
+                        </div>
+                    </form>
+                </header>
+            </section>
+
+            <section class="keliling-segitiga">
+                <header>
+                    <h2>Keliling Segitiga</h2>
                     <form id="hasil" style="display: flexbox;">
                         <div id="result-section" class="result-section">
                             <h4 style="color: #666;" id="result" class="result">0</h4>
