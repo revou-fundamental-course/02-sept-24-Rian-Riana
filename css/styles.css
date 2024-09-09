@@ -7,13 +7,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    font-family: cursive;
 }
 
 /* Navigasi */
 nav {
     width: 100%;
-    background: #333;
     color: #fff;
     padding: 1rem;
     text-align: center; 
@@ -48,6 +47,10 @@ main {
     height: 600px;
 }
 
+.img-segitiga {
+    text-align: center;
+}
+
 /* element h2 dikhususkan untuk sub judul berada di tengah */
 h2 {
     text-align: center;
@@ -58,11 +61,13 @@ img {
     border-radius: 36px;
     padding: 1px;
     margin: 1px;
+    text-align: center;
 }
 .container {
     display: flex;
-    margin: 1px;
-    padding: 1px;
+    margin: 40px;
+    padding: 30px;
+    justify-content: space-around;
 }
 
 /* Style input dan result */
@@ -75,22 +80,45 @@ img {
 }
 .result-section {
     text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .input-luas, .input-keliling {
     display: table-caption;
     margin: 1px;
     padding: 1px;
+    border-style: ridge;
+    border-radius: 10px;
+    background-color: powderblue;
 }
 
 .btn-hitung {
     background-color: mediumspringgreen;
     color: white;
     font-family: serif;
+    border: none;
+    border-style: double;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.1s;
 }
 
 .btn-reset {
     background-color: red;
     color: white;
     font-family: serif;
+    border: none;
+    border-style: double;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.1s;
 }
+
+button:hover {background-color: #0056b3;}
+button:active {transform: scale(0.95);}

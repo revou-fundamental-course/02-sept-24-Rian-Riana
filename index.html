@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: wheat;">
+<html lang="en" style="background-image: url('https://t4.ftcdn.net/jpg/02/05/76/23/360_F_205762306_KCw2syVz457NVnZNQCgFdeWW0MRKqlt0.jpg');">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,14 @@
 <body> 
     <header>
         <nav>
-            <h1 class="main-title">Welcome To Katik</h1>
+            <h1 class="main-title">KATIK</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Beranda</a></li>
                 <li><a href="rumus.html">Rumus</a></li>
             </ul>
         </nav>
     </header>
-
+<hr />
     <!------------------ Input Kalkulasi Luas ------------------->
     <main class="container-section"> 
         <aside class="input-section">
@@ -33,16 +33,19 @@
                     <h2> Hitung Luas & Keliling Segitiga </h2>  
                 </div>
 
-                <div>
+                <div class="img-segitiga">
                     <img src="https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga-1024x576.png.webp" alt="luas-segitiga">
                 </div>
             </form>
+
+            <hr />
             <form class="container">
                 <section class="input-luas">
                     <div>
-                        <label for="alas"> Hitung luas segitiga </label>
-                        <input type="number" id="alas" placeholder="Panjang Alas">
-                        <input type="number" id="tinggi" placeholder="Tinggi">
+                        <label for="alas"> Hitung luas segitiga </label><br />
+                        <input type="number" id="alas" placeholder="Panjang Alas" required><br />
+                        <input type="number" id="tinggi" placeholder="Tinggi" required>
+                        <br />
                         <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
                         <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
                         </div>
@@ -50,12 +53,13 @@
 
                 <section class="input-keliling">
                     <div>
-                        <label for="alas"> Hitung Keliling segitiga </label>
-                        <input type="number" id="sisi" placeholder="sisi kanan">
-                        <input type="number" id="sisi" placeholder="sisi kiri">
-                        <input type="number" id="sisi" placeholder="sisi bawah">
-                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
-                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                        <label for="alas"> Hitung Keliling segitiga </label><br />
+                        <input type="number" id="sisi1" placeholder="sisi kanan" required><br />
+                        <input type="number" id="sisi2" placeholder="sisi kiri" required><br />
+                        <input type="number" id="sisi3" placeholder="sisi bawah" required>
+                        <br />
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calckeliling()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetkeliling()">Reset</button>
                     </div>
                 </section>
             </form>
@@ -66,24 +70,20 @@
             <section class="luas-segitiga">
                 <header>
                     <h2>Luas Segitiga</h2>
-                    <form id="hasil" style="display: flexbox;">
+                    <form id="hasil-luas" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <h4 style="color: #666;" id="result" class="result">0</h4>
-                            <p id="value" class="value"></p>
-                            <p id="category" class="category"></p>
+                            <h4 style="color: #666;" id="luas" class="luas">0</h4>
                         </div>
                     </form>
                 </header>
             </section>
-
+            
             <section class="keliling-segitiga">
                 <header>
                     <h2>Keliling Segitiga</h2>
-                    <form id="hasil" style="display: flexbox;">
+                    <form id="hasil-keliling" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <h4 style="color: #666;" id="result" class="result">0</h4>
-                            <p id="value" class="value"></p>
-                            <p id="category" class="category"></p>
+                            <h4 style="color: #666;" id="keliling" class="keliling">0</h4>
                         </div>
                     </form>
                 </header>
@@ -93,7 +93,7 @@
 
     <!-- bagian bawah tampilan / credit -->
     <footer> 
-        <p>KanKuy Project</p>
+        <p style="color: #fff;">Made By KanKuy Project</p>
     </footer>
 </body>
 </html>
