@@ -48,7 +48,7 @@ main {
     margin: 20vh;
 }
 
-.img-segitiga {
+.img-segitiga, .img-jajar-genjang {
     text-align: center;
 }
 
@@ -58,7 +58,7 @@ h2 {
 }
 
 img {    
-    width: 341px;
+    width: 15rem;
     border-radius: 36px;
     padding: 1px;
     margin: 1px;
@@ -66,26 +66,36 @@ img {
 }
 .container {
     display: flex;
-    margin: 40px;
-    padding: 30px;
     justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
 }
 
 /* Style input dan result */
-.input-section, .result-section {
+.input-section {
     flex: 1 1 300px;
+    background-color: #fff;
     margin: 10px;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
+    max-width: 500px;
 }
 .result-section {
-    text-align: center;
+    background-color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
 }
 
 .input-luas, .input-keliling {
@@ -143,5 +153,45 @@ button:active {transform: scale(0.95);}
     color: #fff;
     justify-content: space-evenly;
     align-items: center;
+}
 
+@media only screen and (min-width: 600px) { 
+    .container, .input-luas, .input-keliling {
+        width: 90%;
+    }
+    .input-section {
+        width: 86%;
+    }
+    .result-section {
+        width: 250px;
+    }
+    input {
+        width: 96%;
+    }
+    
+}
+@media only screen and (min-width: 768px) { 
+    .container, .input-section {
+        width: 91%;
+    }
+    .result-section {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 599px) { 
+    .container, .input-luas, .input-keliling {
+        width: 90%;
+    }
+    .input-section {
+        width: 55%;
+    }
+    .result-section {
+        width: 250px;
+    }
+    input {
+        width: 96%;
+    }
+    img {
+        width: 105%;
+    }   
 }

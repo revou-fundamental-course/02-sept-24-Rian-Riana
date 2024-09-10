@@ -73,9 +73,9 @@
         <aside class="result-section">
             <section class="luas-segitiga">
                 <header>
-                    <h2>Luas Segitiga</h2>
                     <form id="hasil-luas" style="display: flexbox;">
                         <div id="result-section" class="result-section">
+                            <h2>Luas Segitiga</h2>
                             <h4 style="color: #666;" id="luas" class="luas">0</h4>
                         </div>
                     </form>
@@ -84,9 +84,9 @@
             
             <section class="keliling-segitiga">
                 <header>
-                    <h2>Keliling Segitiga</h2>
                     <form id="hasil-keliling" style="display: flexbox;">
                         <div id="result-section" class="result-section">
+                            <h2>Keliling Segitiga</h2>
                             <h4 style="color: #666;" id="keliling" class="keliling">0</h4>
                         </div>
                     </form>
@@ -104,8 +104,8 @@
                     <h2> Hitung Luas & Keliling Jajar Genjang </h2>  
                 </div>
 
-                <div class="img-segitiga">
-                    <img src="https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga-1024x576.png.webp" alt="luas-segitiga">
+                <div class="img-jajar-genjang">
+                    <img src="https://cdn.idntimes.com/content-images/community/2023/11/rumus-jajargenjang-555f7e6f55a0e0cc6f0ebf54b37a7096-1eb7c6dd670f7a8c1f0037c5cde4d7a1.jpg" alt="luas-segitiga">
                 </div>
             </form>
 
@@ -114,23 +114,22 @@
                 <section class="input-luas">
                     <div>
                         <label for="alas"> Hitung luas Jajar Genjang </label><br />
-                        <input type="number" id="alas" placeholder="Panjang Alas" required><br />
-                        <input type="number" id="tinggi" placeholder="Tinggi" required>
+                        <input type="number" id="alasjajgen" placeholder="alas" required><br />
+                        <input type="number" id="tinggijajgen" placeholder="tinggi" required>
                         <br />
-                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
-                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluasjajgen()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluasjajgen()">Reset</button>
                         </div>
                 </section>
 
                 <section class="input-keliling">
                     <div>
                         <label for="alas"> Hitung Keliling Jajar Genjang </label><br />
-                        <input type="number" id="sisi1" placeholder="sisi kanan" required><br />
-                        <input type="number" id="sisi2" placeholder="sisi kiri" required><br />
-                        <input type="number" id="sisi3" placeholder="sisi bawah" required>
+                        <input type="number" id="sisia" placeholder="sisi a" required><br />
+                        <input type="number" id="sisib" placeholder="sisi b" required>
                         <br />
-                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calckeliling()">Hitung</button>
-                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetkeliling()">Reset</button>
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calckeljajgen()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetkeljajgen()">Reset</button>
                     </div>
                 </section>
             </form>
@@ -140,10 +139,10 @@
         <aside class="result-section">
             <section class="luas-jajar-genjang">
                 <header>
-                    <h2>Luas Jajar Genjang</h2>
-                    <form id="hasil-luas" style="display: flexbox;">
+                    <form id="hasil-luas-jajgen" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <h4 style="color: #666;" id="luas" class="luas">0</h4>
+                            <h2>Luas Jajar Genjang</h2>
+                            <h4 style="color: #666;" id="luas-jajgen" class="luas-jajgen">0</h4>
                         </div>
                     </form>
                 </header>
@@ -151,10 +150,10 @@
             
             <section class="keliling-jajar-genjang">
                 <header>
-                    <h2>Keliling Segitiga</h2>
-                    <form id="hasil-keliling" style="display: flexbox;">
+                    <form id="hasil-keliling-jajgen" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <h4 style="color: #666;" id="keliling" class="keliling">0</h4>
+                            <h2>Keliling Jajar Genjang</h2>
+                            <h4 style="color: #666;" id="keliling-jajgen" class="keliling-jajgen">0</h4>
                         </div>
                     </form>
                 </header>
