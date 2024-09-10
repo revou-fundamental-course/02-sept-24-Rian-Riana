@@ -180,9 +180,11 @@ button:active {transform: scale(0.95);}
     }
     .input-section {
         width: 86%;
+        justify-content: center;
     }
     .result-section {
         width: 450px;
+        justify-content: center;
     }
     input {
         width: 96%;
