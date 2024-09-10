@@ -45,7 +45,6 @@ nav ul li a:hover {
 main {
     display: flex;
     height: 600px;
-    margin: 20vh;
 }
 
 .img-segitiga, .img-jajar-genjang {
