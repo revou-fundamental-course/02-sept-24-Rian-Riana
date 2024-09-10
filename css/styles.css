@@ -155,6 +155,8 @@ button:active {transform: scale(0.95);}
     align-items: center;
 }
 
+
+/*Resposive config*/
 @media only screen and (max-width: 599px) { 
     .container, .input-luas, .input-keliling {
         width: 90%;
