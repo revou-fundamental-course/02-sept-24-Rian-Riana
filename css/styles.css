@@ -186,17 +186,3 @@ button:active {transform: scale(0.95);}
         width: 96%;
     }
 }
-@media only screen and (max-width: 700px) { 
-    .container, .input-luas, .input-keliling {
-        width: 90%;
-    }
-    .input-section {
-        width: 86%;
-    }
-    .result-section {
-        width: 450px;
-    }
-    input {
-        width: 96%;
-    }
-}
