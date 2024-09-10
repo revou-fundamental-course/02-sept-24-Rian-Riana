@@ -155,38 +155,45 @@ button:active {transform: scale(0.95);}
     align-items: center;
 }
 
+/* Media query untuk perangkat dengan lebar maksimum 768px (tablet) */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*Resposive config*/
-@media only screen and (max-width: 599px) { 
-    .container, .input-luas, .input-keliling {
-        width: 90%;
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
     }
-    .input-section {
-        width: 80%;
+
+    .container-section {
+        padding: 10px;
     }
-    .result-section {
-        width: 150px;
+
+    .input-section, .result-section {
+        width: 100%;
+        margin: 0;
     }
-    input {
-        width: 90%;
-    }
-    img {
-        width: 105%;
-    }   
 }
-@media only screen and (min-width: 600px) { 
-    .container, .input-luas, .input-keliling {
-        width: 90%;
+
+/* Media query untuk perangkat dengan lebar maksimum 480px (handphone) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
     }
-    .input-section {
-        width: 86%;
-        justify-content: center;
+
+    nav ul li {
+        margin: 5px 0;
     }
-    .result-section {
-        width: 450px;
-        justify-content: center;
+
+    .input-section, .result-section {
+        padding: 5px;
     }
-    input {
-        width: 96%;
+
+    .input-luas, .input-keliling {
+        margin-bottom: 20px;
     }
 }
