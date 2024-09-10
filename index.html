@@ -20,13 +20,17 @@
             <h1 class="main-title">KATIK</h1>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
-                <li><a href="rumus.html">Rumus</a></li>
+                <li><a href="#segitiga">Segitiga</a></li>
+                <li><a href="#jajar-genjang">Jajar Genjang</a></li>
+                <li><a href="#rumus">Rumus</a></li>
             </ul>
         </nav>
+        <hr />
     </header>
-<hr />
+
+<!-- Halaman Katik Segitiga -->
     <!------------------ Input Kalkulasi Luas ------------------->
-    <main class="container-section"> 
+    <main id="segitiga" class="container-section"> 
         <aside class="input-section">
             <form>
                 <div>
@@ -90,7 +94,82 @@
             </section>
         </aside>
     </main>
+<hr />
+<!-- Halaman Katik Jajar Genjang -->
+    <!------------------ Input Kalkulasi Luas ------------------->
+    <main id="jajar-genjang" class="container-section"> 
+        <aside class="input-section">
+            <form>
+                <div>
+                    <h2> Hitung Luas & Keliling Jajar Genjang </h2>  
+                </div>
 
+                <div class="img-segitiga">
+                    <img src="https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga-1024x576.png.webp" alt="luas-segitiga">
+                </div>
+            </form>
+
+            <hr />
+            <form class="container">
+                <section class="input-luas">
+                    <div>
+                        <label for="alas"> Hitung luas Jajar Genjang </label><br />
+                        <input type="number" id="alas" placeholder="Panjang Alas" required><br />
+                        <input type="number" id="tinggi" placeholder="Tinggi" required>
+                        <br />
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calcluas()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetluas()">Reset</button>
+                        </div>
+                </section>
+
+                <section class="input-keliling">
+                    <div>
+                        <label for="alas"> Hitung Keliling Jajar Genjang </label><br />
+                        <input type="number" id="sisi1" placeholder="sisi kanan" required><br />
+                        <input type="number" id="sisi2" placeholder="sisi kiri" required><br />
+                        <input type="number" id="sisi3" placeholder="sisi bawah" required>
+                        <br />
+                        <button type="button" class="btn-hitung" id="btn-hitung" onclick="calckeliling()">Hitung</button>
+                        <button type="button" class="btn-reset" id="btn-reset" onclick="resetkeliling()">Reset</button>
+                    </div>
+                </section>
+            </form>
+        </aside>
+
+        <!------------------ Result Kalkulasi ------------------->
+        <aside class="result-section">
+            <section class="luas-jajar-genjang">
+                <header>
+                    <h2>Luas Jajar Genjang</h2>
+                    <form id="hasil-luas" style="display: flexbox;">
+                        <div id="result-section" class="result-section">
+                            <h4 style="color: #666;" id="luas" class="luas">0</h4>
+                        </div>
+                    </form>
+                </header>
+            </section>
+            
+            <section class="keliling-jajar-genjang">
+                <header>
+                    <h2>Keliling Segitiga</h2>
+                    <form id="hasil-keliling" style="display: flexbox;">
+                        <div id="result-section" class="result-section">
+                            <h4 style="color: #666;" id="keliling" class="keliling">0</h4>
+                        </div>
+                    </form>
+                </header>
+            </section>
+        </aside>
+    </main>
+<hr />
+
+    <!-- Halaman Info Rumus -->
+    <main id="rumus">
+        <section class="rumus"></section>
+            <h2 style="text-align: center;">Berikut adalah rumus untuk menghitung luas dan keliling segitiga</h2>
+        </section>
+    </main>
+<hr />
     <!-- bagian bawah tampilan / credit -->
     <footer> 
         <p style="color: #fff;">Made By KanKuy Project</p>

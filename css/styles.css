@@ -45,6 +45,7 @@ nav ul li a:hover {
 main {
     display: flex;
     height: 600px;
+    margin: 20vh;
 }
 
 .img-segitiga {
@@ -122,3 +123,25 @@ img {
 
 button:hover {background-color: #0056b3;}
 button:active {transform: scale(0.95);}
+
+/*Halaman Informasi Rumus*/
+.rumus {
+    padding: 50px;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.segitiga {
+    padding: 50px;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.jajar-genjang {
+    padding: 50px;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
