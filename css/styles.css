@@ -155,6 +155,23 @@ button:active {transform: scale(0.95);}
     align-items: center;
 }
 
+@media only screen and (max-width: 599px) { 
+    .container, .input-luas, .input-keliling {
+        width: 90%;
+    }
+    .input-section {
+        width: 80%;
+    }
+    .result-section {
+        width: 150px;
+    }
+    input {
+        width: 90%;
+    }
+    img {
+        width: 105%;
+    }   
+}
 @media only screen and (min-width: 600px) { 
     .container, .input-luas, .input-keliling {
         width: 90%;
@@ -163,35 +180,9 @@ button:active {transform: scale(0.95);}
         width: 86%;
     }
     .result-section {
-        width: 250px;
+        width: 450px;
     }
     input {
         width: 96%;
     }
-    
-}
-@media only screen and (min-width: 768px) { 
-    .container, .input-section {
-        width: 91%;
-    }
-    .result-section {
-        width: 300px;
-    }
-}
-@media only screen and (max-width: 599px) { 
-    .container, .input-luas, .input-keliling {
-        width: 90%;
-    }
-    .input-section {
-        width: 55%;
-    }
-    .result-section {
-        width: 250px;
-    }
-    input {
-        width: 96%;
-    }
-    img {
-        width: 105%;
-    }   
 }
