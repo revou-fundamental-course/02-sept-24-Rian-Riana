@@ -157,18 +157,6 @@ button:active {transform: scale(0.95);}
 
 /* Media query untuk perangkat dengan lebar maksimum 768px (tablet) */
 @media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
-
     .container-section {
         padding: 10px;
     }
@@ -181,14 +169,6 @@ button:active {transform: scale(0.95);}
 
 /* Media query untuk perangkat dengan lebar maksimum 480px (handphone) */
 @media (max-width: 480px) {
-    header {
-        font-size: 18px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
     .input-section, .result-section {
         padding: 5px;
     }
