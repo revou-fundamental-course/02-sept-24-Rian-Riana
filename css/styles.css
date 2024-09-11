@@ -149,11 +149,34 @@ button:active {transform: scale(0.95);}
 @media (max-width: 768px) {
     .container-section {
         padding: 10px;
+        display: block;
     }
 
     .input-section, .result-section {
         width: 100%;
         margin: 0;
+        display: block;
+        padding: none;
+        margin: none;
+    }
+    .rumus {
+        padding: none;
+        margin: none;
+        display: block;
+    }
+    .main {
+        padding: none;
+        margin: none;
+        display: block;
+    }
+    body {
+        padding: none;
+        margin: none;
+        display: block;
+    }
+
+    footer {
+        display: none;
     }
 }
 
