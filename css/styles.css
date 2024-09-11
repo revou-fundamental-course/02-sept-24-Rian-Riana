@@ -55,6 +55,7 @@ main {
 /* element h2 dikhususkan untuk sub judul berada di tengah */
 h2 {
     text-align: center;
+    color: #fff;
 }
 
 img {    
@@ -67,35 +68,24 @@ img {
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 90%;
-    max-width: 500px;
 }
 
 /* Style input dan result */
 .input-section {
     flex: 1 1 300px;
-    background-color: #fff;
     margin: 10px;
     padding: 20px;
     border-radius: 8px;
-    max-width: 500px;
 }
 .result-section {
-    background-color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
+    color: #fff;
 }
 
 .input-luas, .input-keliling {
@@ -136,9 +126,9 @@ button:active {transform: scale(0.95);}
 
 /*Halaman Informasi Rumus*/
 .rumus {
-    padding: 50px;
     color: #fff;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .segitiga {
